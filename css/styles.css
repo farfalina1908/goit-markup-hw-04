@@ -273,7 +273,7 @@ html {
 }
 .worker-profession {
    margin-top: 0;
-   margin-bottom: 30px;
+   margin-bottom: 16px;
    color: var(--primary-text-color);
    font-family: "Roboto", sans-serif;
    font-style: normal;
@@ -283,32 +283,63 @@ html {
    letter-spacing: 0.03em;
    text-align: center;
 }
-.social-list {
+.team-social-list {
    display: flex;
-   justify-content: center;
-   color: #afb1b8;
+justify-content: center;
+align-items: center;
+   height: 44px;
+   margin-bottom: 30px;
+   
    outline: 1px solid red;
 }
-.social-list:hover,
-.social-list:focus {
-   color: var(--primary-white-color);
-}
-.social-item {
+
+.team-social-item {
+   text-align: center;
+   padding: 12px 12px;
    width: 44px;
    height: 44px;
    border-radius: 50%;
    margin-right: 10px;
-
-   margin-bottom: 30px;
-   fill: currentColor;
+   
    outline: 1px solid red;
 }
-.social-item:nth-child(4n) {
+.team-social-item:nth-child(4n) {
    margin-right: 0px;
 }
-.social-item:hover,
-.social-item:focus {
+.team-social-item:hover,
+.team-social-item:focus {
    background-color: var(--accent-color);
+   color: var(--primary-white-color);
+} 
+
+.social-icon-style {
+   fill: #afb1b8;
+   width: 20px;
+   height: 20px;
+   
+}
+.social-icon-style:hover, .social-icon-style:focus {
+   fill: var(--primary-white-color);
+} 
+/* our clents */
+.our-clients-title {
+   text-align: center;
+   margin-top: 94px;
+   margin-bottom:50px;
+   color: var(--title-text-color);
+   font-weight: 700;
+   font-size: 36px;
+   line-height: calc(42 / 36);
+}
+.our-clients-list {
+   display: flex;
+}
+.our-clients-logo {
+   width: 170px;
+   height: 92px;
+   margin-right:not(last-child): 30px;
+   margin-bottom: 94px;
+   outline: 1px solid red;
 }
 
 /* footer */
@@ -316,6 +347,9 @@ html {
    background-color: #2f303a;
    padding-top: 60px;
    padding-bottom: 60px;
+}
+.footer-content {
+   display: flex;
 }
 .logo-position {
    margin-bottom: 20px;
@@ -342,6 +376,24 @@ html {
 .contact-nav .link:focus {
    color: var(--accent-color);
 }
+.join {
+      display: flex;
+      width: 206px;
+      height: 80px;
+      margin-left: 70px;
+      }
+
+.join-title {
+   margin-top: 0;
+   margin-bottom:20px;
+   color: var(--primary-white-color);
+   font-weight: 700;
+   font-size: 14px;
+   line-height: calc(16 / 14);
+   text-transform: uppercase;
+}
+.social-icon-footer-style {
+   fill: var(--primary-white-color);
 
 /* portfolio */
 /* filter */
