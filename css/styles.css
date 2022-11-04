@@ -339,6 +339,7 @@ align-items: center;
    height: 92px;
    margin-right:not(last-child): 30px;
    margin-bottom: 94px;
+   padding: 16px 32px;
    outline: 1px solid red;
 }
 
