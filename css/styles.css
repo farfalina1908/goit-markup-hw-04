@@ -113,6 +113,39 @@ html {
 .contact-nav .link:focus {
    color: var(--accent-color);
 }
+.contact-nav .item {
+   display: flex;
+}
+.contact-way {
+   display: flex;
+}
+.contact-info {
+   display: flex;
+}
+
+.mail-icon {
+   width: 16px;
+   height: 12px;
+   align-items: center;
+   margin-right: 10px;
+   fill: var(--primary-text-color);
+}
+.mail-icon:hover,
+.mail-icon:focus {
+   fill: var(--accent-color);
+}
+
+.phone-icon {
+   width: 10px;
+   height: 16px;
+   align-items: center;
+   margin-right: 10px;
+   fill: var(--primary-text-color);
+}
+.phone-icon:hover,
+.phone-icon:focus {
+   fill: var(--accent-color);
+}
 
 /* conteiner */
 .conteiner {
@@ -168,8 +201,23 @@ html {
 }
 
 /* section index*/
+/* features */
+
 .feature-list {
    display: flex;
+}
+.feature-item {
+   width: 270px;
+   height: 120px;
+   margin-bottom: 30px;
+   text-align: center;
+   background-color: #f5f4fa;
+   border-radius: 4px;
+}
+.feature-icon {
+   width: 70px;
+   height: 70px;
+   margin-top: 25px;
 }
 .feature-list .item {
    width: 370px;
@@ -210,6 +258,7 @@ html {
    line-height: calc(24 / 14);
    letter-spacing: 0.03em;
 }
+
 /* our cases */
 .our-cases {
    display: flex;
@@ -285,11 +334,11 @@ html {
 }
 .team-social-list {
    display: flex;
-justify-content: center;
-align-items: center;
+   justify-content: center;
+   align-items: center;
    height: 44px;
    margin-bottom: 30px;
-   
+
    outline: 1px solid red;
 }
 
@@ -300,7 +349,7 @@ align-items: center;
    height: 44px;
    border-radius: 50%;
    margin-right: 10px;
-   
+
    outline: 1px solid red;
 }
 .team-social-item:nth-child(4n) {
@@ -310,22 +359,22 @@ align-items: center;
 .team-social-item:focus {
    background-color: var(--accent-color);
    color: var(--primary-white-color);
-} 
+}
 
 .social-icon-style {
    fill: #afb1b8;
    width: 20px;
    height: 20px;
-   
 }
-.social-icon-style:hover, .social-icon-style:focus {
+.social-icon-style:hover,
+.social-icon-style:focus {
    fill: var(--primary-white-color);
-} 
+}
 /* our clents */
 .our-clients-title {
    text-align: center;
    margin-top: 94px;
-   margin-bottom:50px;
+   margin-bottom: 50px;
    color: var(--title-text-color);
    font-weight: 700;
    font-size: 36px;
@@ -334,13 +383,28 @@ align-items: center;
 .our-clients-list {
    display: flex;
 }
+
+.our-client-items {
+   margin-bottom: 94px;
+}
+.our-client-items:not(:last-child) {
+   margin-right: 30px;
+}
+
 .our-clients-logo {
    width: 170px;
    height: 92px;
-   margin-right:not(last-child): 30px;
-   margin-bottom: 94px;
    padding: 16px 32px;
+   fill: #afb1b8;
+   border: 1px solid #afb1b8;
+   border-radius: 4px;
    outline: 1px solid red;
+}
+
+.our-clients-logo:hover,
+.our-clients-logo:focus {
+   fill: var(--accent-color);
+   border-color: var(--accent-color);
 }
 
 /* footer */
@@ -378,15 +442,15 @@ align-items: center;
    color: var(--accent-color);
 }
 .join {
-      display: flex;
-      width: 206px;
-      height: 80px;
-      margin-left: 70px;
-      }
+   display: flex;
+   width: 206px;
+   height: 80px;
+   margin-left: 70px;
+}
 
 .join-title {
    margin-top: 0;
-   margin-bottom:20px;
+   margin-bottom: 20px;
    color: var(--primary-white-color);
    font-weight: 700;
    font-size: 14px;
@@ -395,6 +459,7 @@ align-items: center;
 }
 .social-icon-footer-style {
    fill: var(--primary-white-color);
+}
 
 /* portfolio */
 /* filter */
