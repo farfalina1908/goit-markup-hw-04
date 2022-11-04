@@ -254,6 +254,7 @@ html {
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 0px 0px 4px 4px;
+   background-color: var(--primary-white-color);
 }
 .our-team .item:nth-child(4n) {
    margin-right: 0;
@@ -281,6 +282,33 @@ html {
    line-height: calc(19 / 16);
    letter-spacing: 0.03em;
    text-align: center;
+}
+.social-list {
+   display: flex;
+   justify-content: center;
+   color: #afb1b8;
+   outline: 1px solid red;
+}
+.social-list:hover,
+.social-list:focus {
+   color: var(--primary-white-color);
+}
+.social-item {
+   width: 44px;
+   height: 44px;
+   border-radius: 50%;
+   margin-right: 10px;
+
+   margin-bottom: 30px;
+   fill: currentColor;
+   outline: 1px solid red;
+}
+.social-item:nth-child(4n) {
+   margin-right: 0px;
+}
+.social-item:hover,
+.social-item:focus {
+   background-color: var(--accent-color);
 }
 
 /* footer */
